@@ -1,2 +1,6 @@
 # Python-IoT
 Python-IoT
+Summary
+Temperature and pressure are three fundamental parameters for building a weather station and measuring environmental conditions. This project is based on the Internet of Things with the aim of displaying current humidity, temperature, and pressure parameters on an LCD screen and internet servers using a Raspberry Pi. We can install this system anywhere and monitor the weather conditions at that location from anywhere in the world through the internet. In addition to displaying live values, we can also view the values stored in the past on the internet.
+
+This IoT-based project consists of four parts. Firstly, the DHT12 sensor captures humidity and temperature, and the BM180 sensor measures atmospheric pressure. In the second step, the Raspberry Pi reads the output of the DHT12 sensor module using the single-wire protocol and the output of the pressure sensor BM180 using the I2C protocol, and converts both sensor values into percent (humidity), Celsius (temperature) scale, and hectopascals or extracts millibars (pressure). All these steps are performed in the sensor hub. In the third step, these values are sent every hour over Wi-Fi to the Google Drive server on the Raspberry Pi 4 and displayed on an LCD screen. If the viewed values are exceeded, an alarm message is displayed on the screen.
